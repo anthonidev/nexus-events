@@ -48,7 +48,6 @@ const FormEvent = ({ eventId }: Props) => {
       <div className="col-span-1">
         <Input
           label="Nombre"
-          radius="none"
           {...register("name")}
           labelPlacement="inside"
           isInvalid={!!errors.name}
