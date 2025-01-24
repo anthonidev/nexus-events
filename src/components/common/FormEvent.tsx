@@ -48,9 +48,9 @@ const FormEvent = ({ eventId }: Props) => {
       <div className="col-span-1">
         <Input
           label="Nombre"
+          radius="none"
           {...register("name")}
           labelPlacement="inside"
-          fullWidth
           isInvalid={!!errors.name}
           errorMessage={errors.name?.message}
         />
@@ -62,7 +62,6 @@ const FormEvent = ({ eventId }: Props) => {
           label="Apellido"
           {...register("lastName")}
           labelPlacement="inside"
-          fullWidth
           isInvalid={!!errors.lastName}
           errorMessage={errors.lastName?.message}
         />
@@ -74,7 +73,6 @@ const FormEvent = ({ eventId }: Props) => {
           label="Correo"
           {...register("email")}
           labelPlacement="inside"
-          fullWidth
           isInvalid={!!errors.email}
           errorMessage={errors.email?.message}
         />
@@ -86,7 +84,6 @@ const FormEvent = ({ eventId }: Props) => {
           label="Teléfono"
           {...register("phone")}
           labelPlacement="inside"
-          fullWidth
           isInvalid={!!errors.phone}
           errorMessage={errors.phone?.message}
         />
@@ -121,7 +118,6 @@ const FormEvent = ({ eventId }: Props) => {
           label="Número de documento"
           {...register("numberDocument")}
           labelPlacement="inside"
-          fullWidth
           isInvalid={!!errors.numberDocument}
           errorMessage={errors.numberDocument?.message}
         />
@@ -155,7 +151,6 @@ const FormEvent = ({ eventId }: Props) => {
           label="Nombre del invitado"
           {...register("nameGuest")}
           labelPlacement="inside"
-          fullWidth
           isInvalid={!!errors.nameGuest}
           errorMessage={errors.nameGuest?.message}
         />

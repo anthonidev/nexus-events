@@ -2,7 +2,7 @@ import FormEvent from "@/components/common/FormEvent";
 import { Thumbnail } from "@/lib/resources";
 import { Metadata } from "next";
 import Image from "next/image";
-const baseUrl = "https://nexus-events.vercel.app";
+const baseUrl = "https://nexus-events-ten.vercel.app";
 
 export async function generateMetadata(): Promise<Metadata> {
   const title = "Programa tu mente para el éxito";
@@ -114,7 +114,7 @@ export default function EventoVisionBoard() {
         <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
           <div className="flex-shrink-0">
             <Image
-              src="/images/banner-evento.jpg"
+              src="/images/banner.jpeg"
               width={300}
               height={300}
               alt="Banner del evento"
