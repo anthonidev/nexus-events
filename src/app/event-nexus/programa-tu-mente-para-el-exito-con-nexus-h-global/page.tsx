@@ -38,12 +38,12 @@ export default function EventoVisionBoard() {
     <div className="section-box min-h-screen flex flex-col items-center py-16 px-6">
       {/* Encabezado del evento */}
       <div className="text-center max-w-3xl">
-        <h1 className="section-title">Programa tu mente para el éxito</h1>
+        <h1 className="section-title">EXPERTO EN MARCA PERSONAL</h1>
         <p className="text-gray-200 italic mb-4">
-          <span>🎯 Nexus H Global te invita a transformar tu vida</span>
+          <span>❌MASTER MIND❌</span>
         </p>
         <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
-          ¡Reprograma tu mentalidad para ganar!
+          El éxito es amante de la preparación
         </h2>
         <p className="text-lg sm:text-xl text-gray-300 mb-4">
           📅 <span className="font-semibold">Este domingo</span> | ⏰{" "}
