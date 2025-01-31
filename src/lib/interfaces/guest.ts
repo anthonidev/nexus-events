@@ -35,7 +35,9 @@ export const guestFormSchema = yup.object({
     .required("El teléfono es obligatorio")
     .matches(/^\d+$/, "El teléfono debe contener solo números")
     .min(9, "Debe tener al menos 9 dígitos")
-    .max(15, "Debe tener como máximo 15 dígitos"),
+    .max(9, "Debe tener como máximo 9 dígitos")
+    .matches(/^9/, "El teléfono debe empezar por 9"), // Se agrega una validación para que el teléfono sea un número
+
   typeDocument: yup
     .mixed<"DNI" | "PASAPORTE" | "CARNET DE EXTRANJERÍA">()
     .oneOf(
@@ -46,7 +48,8 @@ export const guestFormSchema = yup.object({
   numberDocument: yup
     .string()
     .required("El número de documento es obligatorio")
-    .matches(/^\d+$/, "Debe contener solo números"),
+    .matches(/^\d+$/, "Debe contener solo números")
+    .min(8, "Debe tener al menos 8 dígitos"),
   typeGuest: yup
     .mixed<"INVITADO" | "SOCIO">()
     .oneOf(["INVITADO", "SOCIO"], "Selecciona un tipo de invitado válido")
