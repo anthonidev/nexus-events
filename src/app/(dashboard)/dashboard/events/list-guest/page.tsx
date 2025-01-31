@@ -14,7 +14,7 @@ export default function ListGuestPage() {
   const fetchGuests = async () => {
     await getAllGuests(
       token,
-      "programa-tu-mente-para-el-exito-con-nexus-h-global"
+      "congreso-financiero-sana-tu-pasado-financiero-con-pnl"
     );
   };
 
